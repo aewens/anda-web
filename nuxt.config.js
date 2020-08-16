@@ -26,6 +26,10 @@ export default {
     ]
   },
   /*
+  ** Fix color when loading page
+  */
+  loading: { color: '#fff', background: '#000' },
+  /*
   ** Global CSS
   */
   css: [
