@@ -5,10 +5,10 @@
             <h1>ANDA</h1>
         </header>
         <ul>
-            <li>HEADER</li>
-            <li>HEADER</li>
-            <li>HEADER</li>
-            <li>HEADER</li>
+            <li><i class="fas fa-globe-americas" onclick=""></i></li>
+            <li><i class="fas fa-globe-africa" onclick=""></i></li>
+            <li><i class="fas fa-globe-europe" onclick=""></i></li>
+            <li><i class="fas fa-globe-asia" onclick=""></i></li>
         </ul>
     </nav>
     <div id="viewports">
@@ -48,7 +48,7 @@ export default {
     overflow: hidden;
     display: grid;
     grid-template-columns: 80% 20%;
-    grid-template-rows: 50px 1fr 200px;
+    grid-template-rows: 4em 1fr 200px;
     grid-template-areas: "navbar navbar"
                          "viewports event-stream"
                          "footer event-stream";
@@ -67,6 +67,9 @@ export default {
 #navbar header {
     padding-left: 1em;
 }
+#navbar header h1 {
+    /*font-size: 2em;*/
+}
 #navbar ul {
     display: flex;
     justify-content: space-between;
@@ -76,6 +79,14 @@ export default {
 #navbar ul li {
     display: flex;
     padding-left: 2em;
+}
+#navbar ul li i {
+    cursor: pointer;
+    font-size: 1.25em;
+}
+#navbar ul li i:hover {
+    cursor: pointer;
+    color: #f00;
 }
 #viewports {
     grid-area: viewports;
@@ -91,7 +102,7 @@ export default {
 @media all and (max-width: 639px) {
     #app {
         grid-template-columns: auto;
-        grid-template-rows: 50px 1fr 200px 1fr;
+        grid-template-rows: 4em 1fr 200px 1fr;
         grid-template-areas: "navbar"
                              "viewports"
                              "footer"
