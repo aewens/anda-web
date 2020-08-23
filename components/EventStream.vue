@@ -42,7 +42,7 @@ export default {
 ul#event-stream {
     grid-area: event-stream;
     display: inline-block;
-    border: 1px dashed rgba(255, 255, 255, 0.5);
+    /*border: 1px dashed rgba(255, 255, 255, 0.5);*/
     float: left;
     /*width: 20%;*/
     height: 100%;
@@ -50,13 +50,15 @@ ul#event-stream {
     overflow-x: hidden;
     overflow-y: scroll;
     scrollbar-width: none;
+    background: var(--event-stream-background);
 }
 ul#event-stream li {
     display: block;
     width: 100%;
     margin: 5px;
-    padding: 5px;
-    border: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 15px 5px;
+    background: var(--event-stream-entry-background);
+    color: var(--event-stream-entry-color);
 }
 ul#event-stream li p {
     display: inline-block;
