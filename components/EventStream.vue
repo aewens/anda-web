@@ -45,7 +45,7 @@ ul#event-stream {
     /*border: 1px dashed rgba(255, 255, 255, 0.5);*/
     float: left;
     /*width: 20%;*/
-    height: 100%;
+    /*height: 100%;*/
     padding-right: 10px;
     overflow-x: hidden;
     overflow-y: scroll;
@@ -70,4 +70,10 @@ ul#event-stream li span {
     right: 10px;
     cursor: pointer;
 }
+
+/*@media all and (max-width: 639px) {
+    ul#event-stream {
+        height: auto;
+    }
+}*/
 </style>

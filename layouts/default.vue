@@ -70,5 +70,7 @@ html {
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
   background: #000;
+  /*width: 100%;
+  height: 100vh;*/
 }
 </style>

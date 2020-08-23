@@ -46,7 +46,7 @@ export default {
 }
 #app {
     /*position: relative;*/
-    width: 100%;
+    /*width: 100%;*/
     height: 100vh;
     background: var(--base-background);
     color: var(--base-color);
@@ -67,7 +67,7 @@ export default {
     align-items: center;
 
     /*border: 1px dashed rgba(255, 255, 255, 0.5);*/
-    box-shadow: rgba(36, 41, 51, 0.15) 0px 5px 10px 0px);
+    box-shadow: rgba(36, 41, 51, 0.15) 0px 5px 10px 0px;
 }
 #navbar header {
     padding-left: 1em;
@@ -169,8 +169,9 @@ export default {
 
 @media all and (max-width: 639px) {
     #app {
+        height: auto;
         grid-template-columns: auto;
-        grid-template-rows: 4em 1fr 200px 1fr;
+        grid-template-rows: 4em 360px 240px auto;
         grid-template-areas: "navbar"
                              "viewports"
                              "footer"
