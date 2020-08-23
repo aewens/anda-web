@@ -23,6 +23,7 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'stylesheet', href: './nord.css' },
       { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/gh/uyouthe/pwacss/pwacss.min.css' }
     ],
     script: [
