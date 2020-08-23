@@ -53,22 +53,21 @@ ul#event-stream {
     background: var(--event-stream-background);
 }
 ul#event-stream li {
-    display: block;
     width: 100%;
     margin: 5px;
     padding: 15px 5px;
     background: var(--event-stream-entry-background);
     color: var(--event-stream-entry-color);
+    display: flex;
+    justify-content: space-between;
 }
 ul#event-stream li p {
     display: inline-block;
     padding-right: 12px;
 }
 ul#event-stream li span {
-    position: absolute;
-    width: 10px;
-    right: 10px;
     cursor: pointer;
+    padding-right: 10px;
 }
 
 /*@media all and (max-width: 639px) {
